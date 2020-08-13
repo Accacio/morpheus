@@ -4,15 +4,15 @@
 # @file
 # @version 0.1
 
-all: pincenez sandbox
+all: pincenez morpheus
 
 .PHONY: pincenez
 pincenez:
 	@make -C pincenez -j4
 	@make -C pincenez install
 
-.PHONY: sandbox
+.PHONY: morpheus
 sandbox:
-	@make -C sandbox -j4
+	@make -C morpheus -j4
 
 # end
